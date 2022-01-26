@@ -1,15 +1,15 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  client: 'pg',
+  client: "pg",
   connection: {
-    host: 'localhost',
+    host: "localhost",
     port: 5432,
-    user: 'root',
-    password: 'root',
-    database: 'save_me',
+    user: "root",
+    password: "root",
+    database: "saveme",
   },
   migrations: {
-    directory: path.resolve(__dirname, 'src', 'database', 'migrations'),
+    directory: path.resolve(__dirname, "src", "database", "migrations"),
   },
 };
