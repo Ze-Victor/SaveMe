@@ -1,10 +1,10 @@
 {
-  "name": "server_saveMe",
+  "name": "server_saveme",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "knex migrate:latest && node src/index.js",
+    "start": "knex migrate:rollback && knex migrate:latest && node src/index.js",
     "dev": "nodemon -e yaml,js,json src/index.js",
     "knex:migrate": "knex migrate:latest",
     "knex:rollback": "knex migrate:down"
